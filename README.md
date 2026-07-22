@@ -34,7 +34,7 @@ pip install groq python-dotenv requests pandas sqlalchemy psycopg2-binary
 GROQ_API_KEY=kendi-anahtariniz
 ```
 
-`tool_use_ornek.py` PostgreSQL'e de yazdığı için, ayrıca veritabanı bağlantı bilgileri gerekir (bkz. `veri-analizi` reposundaki Phase 6.3):
+`tool_use_ornek.py` içindeki örnek, hava durumu verisini isteğe bağlı olarak bir PostgreSQL veritabanına da yazabilir. Bu özelliği kullanmak isterseniz, aşağıdaki bağlantı bilgilerini `.env` dosyanıza ekleyin (PostgreSQL kurulu ve `hava_durumu_log` adında erişilebilir bir veritabanı olması gerekir):
 
 ```
 DB_HOST=localhost
